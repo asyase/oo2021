@@ -18,20 +18,23 @@ public class CookieCake {
     System.out.println("Kokku läheb vaja " + IVnum + " küpsist. ");
 
     VIpakki = IVnum / Vnum;
-    
-    //kas mõni küpsis jääb ka järgi?
     jääk = IVnum % Vnum;
-    System.out.println("Järgi jääb " + jääk + " küpsist. ");
 
     if(jääk != 0) {
       VIpakki = VIpakki + 1;
       System.out.println("Meil läheb vaja " + VIpakki + " küpsisepakki. "); }
     else {
       System.out.println("Meil läheb vaja " + VIpakki + " küpsisepakki. "); }
+    
+    //kas mõni küpsis jääb ka järgi?
+
+    System.out.println("Järgi jääb " + jääk + " küpsist. ");
+
+    
       System.out.println("Nüüd arvutame kui palju kreemi me vajame meie koogi jaoks.\n1cm^2 peale läheb 15grammi kreemi.");
       int kreem_1kiht = (Inum * IInum)*5;
       int kreemiKogus = kreem_1kiht * IIInum;
-      System.out.println(IIInum + "-kihilise tordi jaoks meile läheb vaja " + kreemiKogus + " grammi kreemi. "); 
+      System.out.println(IIInum + "-kihilise tordi jaoks meil on vaja " + kreemiKogus + " grammi kreemi. "); 
   }
   
     
