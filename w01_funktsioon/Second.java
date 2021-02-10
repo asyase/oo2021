@@ -2,7 +2,7 @@ public class Second {
     public static void main(String[] args) {
       System.out.println(myName());
       System.out.println(add(5, 10));
-      System.out.println(fullName("Raimo", "Pregel"));
+      System.out.println(fullName("Nastja", "Selevjorstova"));
       System.out.println(checkEqual(5, 5));
       System.out.println(notEqual(4, 4));
   
@@ -12,7 +12,7 @@ public class Second {
     }
   
     public static String myName(){
-      return "Raimo";
+      return "Nastja";
     }
   
     public static int add(int number1, int number2){ 
@@ -46,13 +46,13 @@ public class Second {
     }
   
     public static void areStringsEqual(){
-      String name1 = "Raimo";
-      String name2 = "Raimo";
+      String name1 = "Nastja";
+      String name2 = "Nastja";
   
       System.out.println(name1 == name2);
   
-      String newName1 = new String("Raimo"); // uus object
-      String newName2 = new String("Raimo"); // uus object
+      String newName1 = new String("Nastja"); // uus object
+      String newName2 = new String("Nastja"); // uus object
   
       System.out.println(newName1 == newName2);
       System.out.println(newName1.equals(newName2));
