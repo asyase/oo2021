@@ -8,7 +8,7 @@ public class Main {
       character1.name + " " + 
       character1.getSecret());
 
-    character1.setSecret("My new secret");
+    character1.setSecret("My neww secret");
 
     System.out.println(character1.getSecret());
 
