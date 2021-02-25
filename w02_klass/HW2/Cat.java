@@ -1,3 +1,4 @@
+package HW2;
 
 public class Cat {
     
@@ -11,20 +12,20 @@ public class Cat {
        this.name = name;
     }
     // Kassi vanuse määramine muutujale age.
-    public void CatAge(int catAge){
+    public void catAge(int catAge){
        age =  catAge;
     }
     /* Tõuke muutuja määramine . */
-    public void CatBreed(String catBreed){
+    public void catBreed(String catBreed){
        breed = catBreed;
     }
     /* Kaalu muutuja määramine . */
-    public void CatWeight(double catWeight){
+    public void catWeight(double catWeight){
        weight = catWeight;
        
     }
     /* Üksikasjaliku teabe kuvamine */
-    public void printCat(){
+    public void printcat(){
        System.out.println("Nimi: "+ name );
        System.out.println("Vanus: " + age + " aastat vana" );
        System.out.println("Tõuge: " + breed);

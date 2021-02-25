@@ -1,3 +1,5 @@
+package HW2;
+
 public class CatMainHW {
 
         public static void main(String args[]){
@@ -6,15 +8,15 @@ public class CatMainHW {
            Cat catTwo = new Cat("Assol");
      
            // Meetodi kutse iga loodud objekti jaoks.
-           catOne.CatAge(15);
-           catOne.CatBreed("Tõutu");
-           catOne.CatWeight(2.500);
-           catOne.printCat();
+           catOne.catAge(15);
+           catOne.catBreed("Tõutu");
+           catOne.catWeight(2.500);
+           catOne.printcat();
      
-           catTwo.CatAge(4);
-           catTwo.CatBreed("Meini kass");
-           catTwo.CatWeight(3.200);
-           catTwo.printCat();
+           catTwo.catAge(4);
+           catTwo.catBreed("Meini kass");
+           catTwo.catWeight(3.200);
+           catTwo.printcat();
         }
      }
     
