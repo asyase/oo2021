@@ -108,6 +108,20 @@ for (String i : planets.keySet()) {
 
 }
 
+//Hashmap - salvestab value and key,ei ole duplikaadivõtme väärtusi,ta on sorteerimata. Kõiki klassi, mis rakendavad liidest Set, toetavad Mapi rakendused sisemiselt. HashSet salvestab üksusi HashMapi abil. Ehkki üksuse HashMap-i lisamiseks peab see olema esindatud võtme-väärtuste paarina, lisatakse HashSeti ainult väärtus.
+
+//Lists salvestab indeksitega, jarjekorras, muudetavad, saab dubleerida, 
+
+//Hashset unikaalsed objektid(ei kordu)
+//- ei hoia oma elementide järjekorda, mis tähendab, et elemendid tagastatakse mis tahes järjekorras.
+//-ei võimalda duplikaadimälu. Kui lisate olemasoleva üksuse, kirjutatakse vana väärtus üle.
+//- lubab kogule lisada nullväärtuse, kuid ainult ühe väärtuse.
+//- on sünkroonimata
+
+
+//LinkedList- andmed hoitakse nö containerites. Järjestikuseks juurdepääsuks optimeeritud. See rakendab kõiki loenditoiminguid ja võimaldab sisestada kõiki objekte, sealhulgas null.
+//LinkedListi konteiner, mille loendi keskel on kiire sisestamise / kustutamise toimingud. Loendis on link esimesele konteinerile ja igal konteineril on link loendis järgmise konteineriga.
+
 
 
 
