@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "w04",
+			"path": "."
+		},
+		{
+			"name": "w03_klassikomplekt",
+			"path": "../w03_klassikomplekt"
+		}
+	],
+	"settings": {
+		"java.completion.enabled": false,
+		"java.debug.settings.enableRunDebugCodeLens": false
+	}
+}
