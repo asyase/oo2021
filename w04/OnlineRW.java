@@ -5,15 +5,17 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
 
+//loeme  andmeid adressilt, internetist
+
 public class OnlineRW {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(
-      new InputStreamReader(
+      new InputStreamReader( //kutsub jadana 
         new URL("http://www.tlu.ee/~ray/lengths.txt").openStream()));
     
     PrintWriter pw = new PrintWriter(new FileWriter("answer.txt"));
 
-    String line = br.readLine();
+    String line = br.readLine(); //saame katte line
     String[] lineData = line.split(" ");
 
     System.out.println(line);

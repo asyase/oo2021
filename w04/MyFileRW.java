@@ -11,8 +11,8 @@ public class MyFileRW {
     String line = br.readLine();
     int sum = 0;
     while (line != null){
-      sum += Integer.parseInt(line);
-      line = br.readLine();
+      sum += Integer.parseInt(line); //muutumine stringi numbriks 
+      line = br.readLine(); //ja loeme
     }
 
     pw.println("Sum is " + sum);

@@ -13,26 +13,26 @@ public class MyHouse {
     BufferedImage picture = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     Graphics g = picture.createGraphics();
 
-    g.setColor(Color.WHITE);
-    g.fillRect(0, 0, width, height);
+    g.setColor(Color.WHITE); //määrame värvi
+    g.fillRect(0, 0, width, height); // teeme ristkülikut
 
-    g.setColor(Color.BLACK);
-    g.drawString("My house", 20, 20);
+    g.setColor(Color.BLACK); // teksti värv
+    g.drawString("My house", 20, 20); //tekst
 
-    g.drawLine(10, 50, 50, 25);
-    g.drawLine(50, 25, 90, 50);
+    g.drawLine(10, 50, 50, 25); // kust kuhu tõmmata joon
+    g.drawLine(50, 25, 90, 50); // kattus
 
     g.drawRect(10, 50, 80, 40);
 
     g.setColor(Color.GREEN);
 
-    g.fillRect(15, 55, 20, 20);
+    g.fillRect(15, 55, 20, 20); //aknad
     g.fillRect(40, 55, 20, 20);
 
     g.setColor(Color.CYAN);
 
     g.fillRect(65, 55, 20, 30);
 
-    ImageIO.write(picture, "png", new File("house.png"));
+    ImageIO.write(picture, "png", new File("house.png")); 
   }
 }

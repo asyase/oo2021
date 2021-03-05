@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class FileReadWrite {
   public static void main(String[] args) throws IOException {
     File file = new File("dummy1.txt");
-    File fileWrite = new File("out_dummy1.txt");
+    File fileWrite = new File("out_dummy1.txt");//importime faili
     /* System.out.println(
       file.getName() + "\n" +
       file.isFile() + "\n" + 
@@ -21,7 +21,7 @@ public class FileReadWrite {
     ); */
 
     FileReader fr = new FileReader(file);
-    BufferedReader br = new BufferedReader(fr);
+    BufferedReader br = new BufferedReader(fr); //loeme bufferreaderiga(ta kaib labi malu) rea kaupa
 
     String line = br.readLine();
     while (line != null){
@@ -37,11 +37,12 @@ public class FileReadWrite {
     if (!fileWrite.exists()){
       fileWrite.createNewFile();
     }
+    //kirjutame sisse
 
-    PrintWriter pw = new PrintWriter(fileWrite);
-    Scanner scanner = new Scanner(file);
+    PrintWriter pw = new PrintWriter(fileWrite); //sisse printime, 
+    Scanner scanner = new Scanner(file); //scannime esimest faili
 
-    while (scanner.hasNextLine()){
+    while (scanner.hasNextLine()){ //kui failis on next line siis ta teeb midagi sellega
       String line2 = scanner.nextLine();
       String[] lineData = line2.split(",");
       pw.println(
@@ -57,5 +58,7 @@ public class FileReadWrite {
 
     // Loete sisse numbrid failist ja arvutate summa 
     // ja trükite summa uude faili
+
+    
   }
 }
