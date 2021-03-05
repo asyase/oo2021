@@ -1,5 +1,5 @@
-A-tähed tekstis
+Algarvud
 
-* Loe programmi abil kokku, kui palju on tekstifailis a-tähti (nii suuri kui väikeseid)
-* Leia, kui palju oli a-tähti igas sõnas, sõnades keskmiselt, suhtarvuna tähtede üldarvu
-* Loe kokku, mitu sõna oli ühe, kahe, kolme jne a-tähega. Koosta tabel, kus ridadeks tähtede arv sõnas ning veergudeks a-tähtede arv. Lahtris näidatakse, mitu vastavat sõna oli tekstis.
+* Teata, kas kasutaja sisestatud arv jagub kahe, kolme viie või seitsmega.
+* Teata, kas kasutaja sisestatud arv on algarv. 
+* Koosta massiiv esimese tuhande algarvuga. Leia selle sõela abil, millised on kümme suurimat algarvu, mis on väiksemad, kui tuhandenda algarvu ruut. 
