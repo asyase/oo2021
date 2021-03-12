@@ -7,6 +7,15 @@
 		{
 			"name": "w03_klassikomplekt",
 			"path": "../w03_klassikomplekt"
+		},
+		{
+			"path": "../w05_kontrolltoo1"
+		},
+		{
+			"path": "../w06_liides"
+		},
+		{
+			"path": "../w02_klass"
 		}
 	],
 	"settings": {
