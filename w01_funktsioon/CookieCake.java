@@ -32,7 +32,7 @@ public class CookieCake {
 
     
       System.out.println("Nüüd arvutame kui palju kreemi me vajame meie koogi jaoks.\n1cm^2 peale läheb 15grammi kreemi.");
-      int kreem_1kiht = (Inum * IInum)*5;
+      int kreem_1kiht = (Inum * IInum)*15;
       int kreemiKogus = kreem_1kiht * IIInum;
       System.out.println(IIInum + "-kihilise tordi jaoks meil on vaja " + kreemiKogus + " grammi kreemi. "); 
   }

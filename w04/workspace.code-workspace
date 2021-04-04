@@ -16,6 +16,12 @@
 		},
 		{
 			"path": "../w02_klass"
+		},
+		{
+			"path": "../w07_junit"
+		},
+		{
+			"path": "../w07_junit/test"
 		}
 	],
 	"settings": {
