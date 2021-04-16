@@ -1,3 +1,4 @@
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.*;
@@ -17,4 +18,3 @@ public class AppTest {
     assertEquals("sum should be 5+5=10", 10, App.sum(5, 5));
   }
 }
-

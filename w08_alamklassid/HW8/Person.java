@@ -1,14 +1,14 @@
 package HW8;
 
 public class Person {
-        private int allCalories = 0;
+        private int allCalories;
     
         public void howManyCalories() {
             System.out.println("Täna kaloreid saadud: " + allCalories);
         }
     
-        public void eaten(int kalorid) {
-            allCalories += kalorid;
+        public void eaten(int calories) {
+            allCalories += calories;
         }
     
         public void isTheCalorieIntakeDone(int norm) {
