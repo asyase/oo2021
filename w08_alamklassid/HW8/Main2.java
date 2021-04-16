@@ -24,7 +24,7 @@ public class Main2 {
             p2.dailyCalories();
             p2.howManyCalories();
            
-            p2.eaten(2300);
+            p2.eaten(2200);
             System.out.println("Sportlane sõi 2300 kalori jagu toitu");
             p2.isTheCalorieIntakeDone(p2.dailyCalories);
             
