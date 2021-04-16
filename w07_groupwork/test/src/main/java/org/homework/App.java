@@ -2,6 +2,7 @@ package org.homework;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 import java.lang.Math;
 public class App {
     public static int width = 35;
