@@ -8,7 +8,7 @@ public class Child extends Parent {
     @Override
     public void firstThingIDo() {
       super.firstThingIDo();
-      System.out.println("I get up");
+      System.out.println("I get up!");
     }
   
       @Override
