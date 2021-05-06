@@ -4,11 +4,11 @@ import org.junit.*;
 import static org.junit.Assert.*;
 public class JoogiTestid{
   
-    Jook kanes = new Jook("Kanes", 1.2, 1.5);
-    JoogiPudel p1 = new JoogiPudel("klaas", 0.7, 0.1, kanes);
-    JoogiVaat v1 = new JoogiVaat(10, 120, kanes);
-    JoogiKast k1 = new JoogiKast("Plastmass", 22.0, 3.0, 12);
-    JoogiKast k2 = new JoogiKast("Puu", 42.0, 5.0, 24);
+    Jook1 kanes = new Jook1("Kanes", 1.2, 1.5);
+    JoogiPudel1 p1 = new JoogiPudel1("klaas", 0.7, 0.1, kanes);
+    JoogiVaat1 v1 = new JoogiVaat1(10, 120, kanes);
+    JoogiKast1 k1 = new JoogiKast1("Plastmass", 22.0, 3.0, 12);
+    JoogiKast1 k2 = new JoogiKast1("Puu", 42.0, 5.0, 24);
 
     @Test
     public void kontroll_1_massiLeidmine() {

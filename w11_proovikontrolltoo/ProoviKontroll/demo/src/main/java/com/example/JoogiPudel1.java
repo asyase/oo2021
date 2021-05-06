@@ -2,14 +2,14 @@ package com.example;
 
 //Koostan klassi nimetusega Joogipudel, millel on maht, pudelityyp, mass ning taara maksumus
 
-public class JoogiPudel {
+public class JoogiPudel1 {
     double maht;
     String pudelityyp;
     double mass;
     double taaraHind;
-    Jook sisu;
+    Jook1 sisu;
 
-    public JoogiPudel(String pudelityyp, double maht, double taaraHind, Jook sisu) {
+    public JoogiPudel1(String pudelityyp, double maht, double taaraHind, Jook1 sisu) {
 
         this.pudelityyp = pudelityyp;
         this.maht = maht;
@@ -18,14 +18,14 @@ public class JoogiPudel {
         if (sisu != null) {
             this.sisu = sisu;
         } else {
-            this.sisu = new Jook("Kanes", 1.3, 1.5);
+            this.sisu = new Jook1("Kanes", 1.3, 1.5);
         }
     }
 
-    public JoogiPudel(JoogiPudel suur) {
+    public JoogiPudel1(JoogiPudel1 suur) {
     }
 
-    public void lisaJook(Jook vedelik) {
+    public void lisaJook(Jook1 vedelik) {
         sisu = vedelik;
     }
     // Leian joogipudeli massi koos Joogiga (juhul kui see olemas)

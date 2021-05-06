@@ -1,12 +1,12 @@
 package com.example;
 
-public class Main {
+public class Main1 {
 
     public static void main(String[] arg) {
-        Jook j1 = new Jook("Kanes", 1.1, 0.5);
-        JoogiPudel p1 = new JoogiPudel("Plastik", 0.2, 0.1, j1);
-        JoogiVaat v1 = new JoogiVaat(6, 80, j1);
-        JoogiKast k1 = new JoogiKast("Klaas", 13.2, 3.0, 12);
+        Jook1 j1 = new Jook1("Kanes", 1.1, 0.5);
+        JoogiPudel1 p1 = new JoogiPudel1("Plastik", 0.2, 0.1, j1);
+        JoogiVaat1 v1 = new JoogiVaat1(6, 80, j1);
+        JoogiKast1 k1 = new JoogiKast1("Klaas", 13.2, 3.0, 12);
 
         System.out.println("- Joogi nimi on " + j1.nimi);
         System.out.println("- Joogipudeli mass on " + p1.leiaMass());
