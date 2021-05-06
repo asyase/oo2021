@@ -30,7 +30,7 @@ public class JoogiTestid{
     }
 
     @Test
-    public void kontroll_3_kastiÜhineMass() {
+    public void kontroll_4_kastiÜhineMass() {
         p1.lisaJook(kanes);
         k2.pudeliteLisamine(p1);
         assertEquals(5.2, 3.1, k2.kastiKoguMass(p1));
@@ -42,14 +42,14 @@ public class JoogiTestid{
         
 
 	@Test
-	public void kontroll4_kastiOmaHind(){
+	public void kontroll_5_kastiOmaHind(){
 		p1.lisaJook(kanes);
 		assertEquals(10,13.52, k1.kastiKoguHind(p1));
 	}
 
     
     @Test
-    public void kontroll_5_kastTest() {
+    public void kontroll_6_kastTest() {
         k1.pudeliteLisamine(p1);
         k1.pudeliteLisamine(p1);
         assertEquals(10, 12, k1.pesasid);
