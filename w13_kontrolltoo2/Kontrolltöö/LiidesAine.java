@@ -1,4 +1,4 @@
-package Kontrolltöö;
+package kontrolltöö;
 
 public interface LiidesAine {
     String nimetus();

@@ -1,7 +1,7 @@
-package Kontrolltöö;
+package kontrolltöö;
 
 public interface LiidesIoon{
-	 String nimetus();
-     double aatomMassideSumma();
-     int laeng();
+	String nimetus();
+     Double aatomMassideSumma();
+     Double laeng();
 }
