@@ -1,1 +1,41 @@
 Märkmed seminari teemadel
+
+«Jave käivitamise moodused + Java plussid»
+
+
+Salvestatske Java lähtekoodi faili .java laiendiga,  kompileeritakse seda Java-baitkoodiks faili laiendiga .class ja Java-bait-kood interpriteeritakse Java-virtuaalne masinaga. 
+
+Java lähtekoodi loomiseks ja muutmiseks võib kasutada mis iganes IDE-d integrated develpomnet environment . Aga võib täiesti ilma IDE-ta hakkama saada ja kirjutada lähtekoodi mis tahes tekstiredaktorisse (näiteks Notepadis) ja kompileerida käsureal.
+
+nagu siin slaidil ma kirjutasin lihtsa Java-programmi tekstiredaktoris  ja terminalis  käsu javac abil Java kompilaator kui pole süntaksivigu teisendab Java lähtefaili baitcode failiks. Ja siis käsk java Hello käivitab Java virtuaalse masina ja proovib laadida klassi nimega Hello. Selle klassi laadimisel käivitab see main meetodit.
+
+Programmide kompileerimiseks ja käivitamiseks peab installima JDK.
+
+Tavaliselt, kui on vaja ainult Java-programmi käivitada arvutis, siis piisab ainult JRE installimist, kuna see sisaldab java virtuaal masinat sees ja faili kogumikke (binaarsed failid) / klassipakette (Util, Lang, Math jne).Aga kui plaaneritakse Java programmeerimisega tegeleda, siis ikkagi peaks selle asemel installima JDK siis.
+
+	•	JVM on Java virtuaalne masin, mis käivitab Java .class-failid  (baitkood). JVM-i saab laadida mitmesugusele riistvarale. Bytekoodid on JVM-i masinakeel.
+	•	
+	•	JRE on Java täitmise keskkond, mis on programmi käivitamiseks piisav.
+	•	JRE = JVM +faili kogumik / klassipaketid (Util, Lang, Math jne). 
+	•	JDK on Java arenduskomplekt. Vajalik programmi kirjutamiseks, kompileerimiseks ja käivitamiseks. 
+	•	JDK = JRE + tööriistad, mis on vajalikud Java-rakenduste arendamiseks. 
+
+ java eelistest
+	•	Java keelt on lihtne õppida.
+Java väljatöötamise käigus pöörati suurt tähelepanu keele lihtsusele, mistõttu Java-programme on teistes keeltes võrreldes lihtsam kirjutada, kompileerida ja õppida. Sellel on selged süntaksireeglid ja selge semantika. 
+
+	•	Java on objektile orienteeritud keel.
+aitab meil suurendada koodi paindlikkust ja korduvkasutatavust. OOP-ide kontseptsiooni abil saame objekti teistes programmides hõlpsalt taaskasutada. Samuti aitab see suuremate moodulite korrastamist väiksemateks, nii et neid oleks lihtne mõista.
+
+	•	Java keele üks peamisi eeliseid on see et see on  platvormist sõltumatu. Võib ühest süsteemist teisesse portida , mis on eriti oluline veebi jaoks mõeldud programmide jaoks ja võimaldab käivitada Java-rakendusi, mis iganes op.süsteemis. Ainus oluline asi on täitmisekeskkond ehk JVM olemasolu. Baitkoodi on igas masinas lihtne interpriteerida
+
+	•	Turvaline: Kõige olulisem kriteerium, mis arvestab keele kasutamist võrgus / hajutatud keskkondades. java Autentimismeetodid põhinevad avaliku võtme krüptimisel.
+
+	•	Usaldusväärsus on üks olulisemaid eeliseid. Java programmid töötavad stabiilselt igas keskkonnas. Kasutaja suudab tuvastada vigu juba enne koodi käivitamist, see tähendab varajases staadiumis. 
+
+	•	Dünaamilisus ja kohanemisvõime. See funktsioon võimaldab Java-l mitte eksida pidevalt muutuvas keskkonnas. Vajadusel saab lisada teekidesse uusi objekte, meetodeid.
+
+	•	Mitme lõimimine: Mitme lõime funktsioonide abil saab kirjutada programme, mis suudavad korraga täita paljusid ülesandeid. Selle disainifunktsiooni Java-keele tutvustus võimaldab arendajatel luua silutud interaktiivseid rakendusi.
+
+	•	Suur jõudlus: Just-In-Time kompilaatori kasutuselevõtt võimaldas suurt jõudlust. 
+
