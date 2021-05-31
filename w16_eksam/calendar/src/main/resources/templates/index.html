@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+<section id="todocontainer" class="container">
+    <h2 class="my-10 text-center" style="margin: 2rem 0;">Kalender</h2>
+
+    <div class="d-flex justify-content-center">
+        <form th:action="@{/events}" method="GET" enctype="multipart/form-data">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg text-white mt-10">Minu kalender</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org" lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/src/js/bootstrap-datetimepicker.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/a549aa8780dbda16f6cff545aeabc3d71073911e/build/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+<style></style>
+<section id="todocontainer" class="container mt-5">
+    <div class="col-6 mx-auto">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Esmaspäev</h4>
+                <table id="monday" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${mondays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <span>Praegu on <span th:text="${countMo}"></span> tegevusi esmaspäeval</span>
+
+            </div>
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Teisipäev</h4>
+                <table id="tuesday" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${tuesdays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Kolmapäev</h4>
+                <table id="wednesday" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${wednesdays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Neljapäev</h4>
+                <table id="thursdays" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${thursdays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Reede</h4>
+                <table id="fridays" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${fridays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12">
+                <h4 class="bg-primary text-center py-2">Laupäev</h4>
+                <table id="saturdays" class="table m-0">
+                    <tbody>
+                    <tr th:each="event : ${saturdays}">
+                        <th scope="row" th:text=${event.id} class="d-none"></th>
+                        <td th:text=${event.event}></td>
+                        <td th:text=${event.start}></td>
+                        <td th:text=${event.end}></td>
+                        <td th:text=${event.room}></td>
+                        <td>
+                            <form th:action="@{/todoDelete/{id}(id=${event.id})}" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm text-white">✕</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-10">
+        <a class="btn btn-solid btn-lg btn-warning text-white" data-toggle="modal" data-target="#viewModal" style="cursor: pointer">Lisa Käsitsi</a>
+        <a class="btn btn-solid btn-lg btn-primary text-white ml-3" data-toggle="modal" data-target="" style="cursor: pointer">ASIO Import</a>
+    </div>
+
+
+    <div class="modal fade" id="viewModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto" id="exampleModalLabel">Lisa oma tegevus</h5>
+                    <button type="button" class="close my-auto" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form th:action="@{/add}" method="POST" enctype="multipart/form-data">
+                        <div class="input-group input-group-lg mb-3 d-flex">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Tegevus</span>
+                            </div>
+                            <input type="text" class="form-control w-auto" id="event" name="event" aria-describedby="basic-addon3" required>
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                            <label for="input_date">Päev</label>
+                            <input placeholder="Selected time" type="text" id="input_date" name="date" class="form-control datepicker" >
+                            <input placeholder="" type="text" id="num_date" name="day" class="form-control d-none">
+                        </div>
+                       <div class="input-group input-group-lg mb-3 d-flex no-wrap">
+                           <div class="">
+                               <label for="input_starttime">Algusaeg</label>
+                               <input placeholder="Selected time" type="text" id="input_starttime" name="start" class="form-control timepicker" required>
+
+                           </div>
+                         <div class="">
+                             <label for="input_endtime">Lõpp</label>
+                             <input placeholder="Selected time" type="text" id="input_endtime" name="end" class="form-control timepicker" required>
+                         </div>
+                           </div>
+
+                        <div class="input-group input-group-lg mb-3 d-flex">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ruum</span>
+                            </div>
+                            <input type="text" class="form-control w-auto" id="room" name="room" aria-describedby="basic-addon3" required>
+                        </div>
+                        <div id="repetitions" class="col-8">
+                            <label>Kordumine</label>
+                            <div class="row mb-3">
+                                <div class="col-2"> <input class="" type="checkbox" value="" id="1"></div>
+                                <div class="col-2"><input class="form-check-input" type="checkbox" value="" id="2"></div>
+                                <div class="col-2"><input class="form-check-input" type="checkbox" value="" id="3"></div>
+                                <div class="col-2"><input class="form-check-input" type="checkbox" value="" id="4"></div>
+                                <div class="col-2"><input class="form-check-input" type="checkbox" value="" id="5"></div>
+                                <div class="col-2"><input class="form-check-input" type="checkbox" value="" id="6"></div>
+                                <div class="col-2"><label class="form-check-label" for="1">E </label></div>
+                                <div class="col-2"> <label class="form-check-label" for="2">T</label></div>
+                                <div class="col-2"><label class="form-check-label" for="3">K</label></div>
+                                <div class="col-2"><label class="form-check-label" for="4">N </label></div>
+                                <div class="col-2"> <label class="form-check-label" for="5">R</label></div>
+                                <div class="col-2"><label class="form-check-label" for="6">L</label></div>
+
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tühjenda</button>
+                        <button type="submit" class="btn btn-primary">Salvesta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+
+    $(".timepicker").flatpickr(
+        {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true,
+        }
+    );
+    var numDay = '';
+    $(".datepicker").flatpickr(
+        {
+            onChange: function (dateText, inst){
+                var date = new Date(dateText);
+                var day = date.getDay().toString();
+                $("#num_date").val(day);
+                numDay = day;
+            }
+        }
+    );
+
+
+   $("input[type='checkbox']").on('change', function () {
+        var repetitions = $("#repetitions").find("input:checked");
+        var day= numDay;
+
+        repetitions.each(function () {
+            if(!day.includes($(this).attr("id"))){
+                day+=$(this).attr("id");
+            }
+            $("#num_date").val(day);
+        });
+    });
+
+</script>
+</body>
+</html>
